@@ -1,16 +1,36 @@
 ---
-
+import RatingApp from "../components/RatingApp";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="A simple interactive component to 'rate' a service, made with Solid.js and Astro."
+    />
+    <title>Interactive Rating Component</title>
+
+    <meta property="og:title" content="Interactive Rating Component" />
+    <meta
+      property="og:description"
+      content="A simple interactive component to 'rate' a service, made with Solid.js and Astro."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="bg-very-dark-blue flex h-fit min-h-screen w-full items-center justify-center p-6"
+  >
+    <RatingApp client:load />
+  </body>
 </html>
