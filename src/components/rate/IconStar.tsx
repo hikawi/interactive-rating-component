@@ -1,7 +1,8 @@
 export default function IconStar() {
   return (
     <div
-      class="bg-dark-blue flex size-10 items-center justify-center rounded-full sm:size-12"
+      class="flex size-10 items-center justify-center rounded-full bg-dark-blue sm:size-12"
+      role="img"
       aria-label="A graphics of a star to denote the concept of 'rating'"
     >
       <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
